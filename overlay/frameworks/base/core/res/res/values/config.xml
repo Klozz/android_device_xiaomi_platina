@@ -573,5 +573,8 @@
 
     <!-- Whether auto face unlock is enabled by default -->
     <bool name="config_autoFaceUnlockEnabledByDefault">true</bool>
-    
+
+    <!-- Whether the device has outdated qti-telephony-common.jar -->
+    <bool name="config_oldQtiTelephony">false</bool>
+
 </resources>

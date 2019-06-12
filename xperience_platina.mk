@@ -24,7 +24,7 @@ $(call inherit-product, vendor/xperience/config/common_full_phone.mk)
 $(call inherit-product, device/xiaomi/platina/device.mk)
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_HEIGHT := 2280
 TARGET_SCREEN_WIDTH := 1080
 
 #CAF prop CAF includes
