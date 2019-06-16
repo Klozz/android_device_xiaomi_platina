@@ -348,7 +348,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.2-service.jason-libperfmgr
+    android.hardware.power@1.2-service.platina-libperfmgr
 
 PRODUCT_COPY_FILES += \
     device/xiaomi/platina/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
