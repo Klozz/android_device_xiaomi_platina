@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.pixelexperience.thermalcontroller;
+package mx.xperience.thermalcontroller;
 
 import android.util.Log;
 

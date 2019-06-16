@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.pixelexperience.thermalcontroller;
+package mx.xperience.thermalcontroller;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -22,7 +22,7 @@ import android.content.Intent;
 import android.util.Log;
 import android.text.TextUtils;
 
-import com.android.internal.util.custom.thermal.ThermalController;
+import com.android.internal.util.xperience.thermal.ThermalController;
 
 public class Receiver extends BroadcastReceiver {
     private static final String TAG = "ThermalController:Receiver";

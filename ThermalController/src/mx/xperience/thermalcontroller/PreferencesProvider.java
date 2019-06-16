@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.pixelexperience.thermalcontroller;
+package mx.xperience.thermalcontroller;
 
 import android.content.ContentProvider;
 import android.content.ContentValues;
@@ -24,7 +24,7 @@ import android.database.MatrixCursor;
 import android.net.Uri;
 import android.text.TextUtils;
 
-import static com.android.internal.util.custom.thermal.ThermalController.*;
+import static com.android.internal.util.xperience.thermal.ThermalController.*;
 
 public class PreferencesProvider extends ContentProvider {
     private static final int PREFERENCES = 1;
