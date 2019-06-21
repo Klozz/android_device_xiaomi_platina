@@ -199,6 +199,7 @@ PRODUCT_PACKAGES += \
     libdisplayconfig \
     liboverlay \
     libqdMetaData.system \
+    libqdMetaData \
     libtinyxml \
     memtrack.sdm660
 
