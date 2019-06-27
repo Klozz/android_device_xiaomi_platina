@@ -2,7 +2,7 @@
 
 # Enable CAMERA2API by default in vendor
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.camera.HAL3.enabled=1 \
+    persist.vendor.camera.HAL3.enabled=0 \
     persist.vendor.eis.enabled=1
 
 # SAR Sensor Fusion
@@ -288,9 +288,22 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Disable UBWC for camera
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.preview.ubwc=0 \
+	persist.camera.depth.focus.cb=0 \
     persist.camera.hist.high=20 \
     persist.camera.hist.drc=1.2 \
+    persist.camera.isp.clock.optmz=0 \
+    persist.camera.isp.turbo=1 \
+    persist.camera.linkpreview=0 \
+    persist.bokeh.switch.lux=290 \
+    persist.camera.set.afd=4 \
     persist.camera.stats.test=5
+
+# The following prop will enable dual camera, if you confuse on crash, just delete it to use single camera.
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.camera.auxswitch.threshold=330 \
+    persist.camera.mainswitch.threshold=419 \
+    persist.camera.expose.aux=1
+
 
 # Set maximum supported adapter voltage
 PRODUCT_PROPERTY_OVERRIDES += \
