@@ -31,7 +31,7 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
 
 #PRODUCT_ENFORCE_RRO_TARGETS := \
-#   framework-res
+    framework-res
 
 # Playground for GoogleCamera
 PRODUCT_PACKAGES += \
@@ -175,6 +175,15 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     libxml2 \
     MiuiCamera
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/Miui/lib/arm64/libCameraEffectJNI.so:$(TARGET_COPY_OUT_VENDOR)/priv-app/MiuiCamera/lib/arm64/libCameraEffectJNI.so \
+    $(LOCAL_PATH)/Miui/lib/arm64/libcutils.so$(TARGET_COPY_OUT_VENDOR)/priv-app/MiuiCamera/lib/arm64/libcutils.so \
+    $(LOCAL_PATH)/Miui/lib/arm64/libmorpho_group_portrait.so:$(TARGET_COPY_OUT_VENDOR)/priv-app/MiuiCamera/lib/arm64/libmorpho_group_portrait.so \
+    $(LOCAL_PATH)/Miui/lib/arm64/libmorpho_groupshot.so:$(TARGET_COPY_OUT_VENDOR)/priv-app/MiuiCamera/lib/arm64/libmorpho_groupshot.so \
+    $(LOCAL_PATH)/Miui/lib/arm64/libmorpho_memory_allocator.so:$(TARGET_COPY_OUT_VENDOR)/priv-app/MiuiCamera/lib/arm64/libmorpho_memory_allocator.so \
+    $(LOCAL_PATH)/Miui/lib/arm64/libmorpho_panorama.so:$(TARGET_COPY_OUT_VENDOR)/priv-app/MiuiCamera/lib/arm64/libmorpho_panorama.so \
+    $(LOCAL_PATH)/Miui/lib/arm64/libmorpho_panorama_gp.so:$(TARGET_COPY_OUT_VENDOR)/priv-app/MiuiCamera/lib/arm64/libmorpho_panorama_gp.so
 
 # Charger
 PRODUCT_PACKAGES += \
