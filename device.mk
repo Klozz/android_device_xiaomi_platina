@@ -397,7 +397,8 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     init.performance.platina.rc \
     ueventd.qcom.rc \
-    fstab.qcom
+    fstab.qcom \
+    xperience-info
 
 # RCS
 PRODUCT_PACKAGES += \
