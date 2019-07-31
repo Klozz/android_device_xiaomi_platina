@@ -109,7 +109,7 @@ TW_THEME := portrait_hdpi
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_Y_OFFSET := 89
 TW_H_OFFSET := -89
-#TW_USE_TOOLBOX := true
+TW_USE_TOOLBOX := true
 #TW_CRYPTO_SYSTEM_VOLD_MOUNT := vendor cust odm
 LZMA_RAMDISK_TARGETS := recovery
 
@@ -118,6 +118,3 @@ TW_INCLUDE_FUSE_EXFAT := true
 
 # NTFS Support
 TW_INCLUDE_FUSE_NTFS := true
-
-# Official
-#PB_OFFICIAL := true
