@@ -15,3 +15,8 @@
  PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_platina.mk \
     $(LOCAL_DIR)/xperience_platina.mk
+
+COMMON_LUNCH_CHOICES := \
+    xperience_platina-user \
+    xperience_platina-userdebug \
+    xperience_platina-eng

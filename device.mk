@@ -1,4 +1,4 @@
-# 
+#
 # Copyright (C) 2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,10 +21,15 @@
 # definition file).
 #
 
-$(call inherit-product, vendor/xiaomi/platina/platina-vendor.mk)
+#$(call inherit-product, vendor/xiaomi/platina/platina-vendor.mk)
+
+PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
 
 # Properties
 -include $(LOCAL_PATH)/vendor_prop.mk
+
+#TREBLE
+PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \

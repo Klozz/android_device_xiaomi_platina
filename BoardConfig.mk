@@ -43,7 +43,7 @@ TARGET_2ND_ARCH := arm
 TARGET_2ND_ARCH_VARIANT := armv8-a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
-TARGET_2ND_CPU_VARIANT := cortex-a73
+TARGET_2ND_CPU_VARIANT := kryo
 
 TARGET_USES_64_BIT_BINDER := true
 
@@ -143,7 +143,6 @@ ifeq ($(HOST_OS),linux)
     endif
   endif
 endif
-PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
 
 # Display
 MAX_EGL_CACHE_KEY_SIZE := 12*1024
@@ -248,10 +247,10 @@ include device/qcom/sepolicy/sepolicy.mk
 
 # Treble
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
-PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 PRODUCT_VENDOR_MOVE_ENABLED := true
 DEVICE_DEFINES_OWN_VNDK := true
+BOARD_VNDK_VERSION := current
 
 # Use mke2fs to create ext4 images
 TARGET_USES_MKE2FS := true
@@ -284,7 +283,6 @@ ifeq ($(HOST_OS),linux)
     endif
   endif
 endif
-PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
 
 # inherit from the proprietary version
--include vendor/xiaomi/platina/BoardConfigVendor.mk
+#-include vendor/xiaomi/platina/BoardConfigVendor.mk
